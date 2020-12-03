@@ -1,0 +1,20 @@
+endpoint:
+http://api.openweathermap.org/data/2.5/
+
+paths:
+/weather
+/onecall
+
+--Paths end with '?'--
+
+parameters:
+q=City Name, Country Code
+units=metric
+appid=XXXXXXXXXXXXXXXXXXX 
+
+--appid hereis API key, keep this secret--
+
+--parameters are joined by '&'--
+
+API call:
+http://api.openweathermap.org/data/2.5/weather?q=London,UK&units=metric&appid=XXXXXXXXXXXXXXXXXXX
