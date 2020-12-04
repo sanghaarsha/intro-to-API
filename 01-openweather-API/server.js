@@ -1,3 +1,8 @@
+// As this program is using node-fetch instead of https module
+// You need to provide location without any spelling mistakes
+// It will not catch 404 errors
+// I will be creating The improved version next.
+
 require("dotenv").config();
 
 const express = require("express");
