@@ -7,7 +7,11 @@ const https = require("https");
 const bodyParser = require("body-parser"); // for request body parsing
 const lookup = require("country-code-lookup");
 const app = express();
-const port = 3030;
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
