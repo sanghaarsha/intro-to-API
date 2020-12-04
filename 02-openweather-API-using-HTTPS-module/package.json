@@ -1,0 +1,16 @@
+{
+  "name": "openweather-call-using-node-https-module",
+  "version": "1.0.0",
+  "description": "Re implementation of previous API call but using node's native HTTPS module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

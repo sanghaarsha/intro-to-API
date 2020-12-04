@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <!-- Place -->
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" />
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" />
+
+            <!-- Units  -->
+            <select name="unit">
+                <option value="metric" selected>metric</option>
+                <option value="standard">standard</option>
+                <option value="imperial">imperial</option>
+            </select>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
