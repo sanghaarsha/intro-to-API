@@ -14,7 +14,7 @@ appid=XXXXXXXXXXXXXXXXXXX
 
 --appid hereis API key, keep this secret--
 
---parameters are joined by '&'--
+--parameters are joined by '&' and separated by commas and they have key-value pair--
 
 API call:
 http://api.openweathermap.org/data/2.5/weather?q=London,UK&units=metric&appid=XXXXXXXXXXXXXXXXXXX
