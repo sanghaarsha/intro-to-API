@@ -46,6 +46,7 @@ app.post("/", (req, res) => {
 
     // Performing https.get method to obtain data from API as data buffer
     const request = https.get(apiUrl, (response) => {
+        // checking for 404 and other error status code
         if (response.statusCode === 200) {
             response.on("data", (d) => {
                 // converting data buffer(HEXCODE) into json, as https.get returns the data buffer from the api call
