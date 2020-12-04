@@ -61,7 +61,7 @@ app.post("/", (req, res) => {
                 // specifying header type to be text/html
                 res.setHeader("Content-Type", "text/html");
 
-                // sending all the contents written using res.write
+                // sending generated contenr using res.send
                 res.send(`
                 <head>
                     <link rel="stylesheet" href="./styles.css" />
@@ -103,6 +103,4 @@ app.post("/", (req, res) => {
     request.end();
 });
 
-app.listen(port, () => {
-    console.log(`Go to http://localhost:${port}`);
-});
+app.listen(port);
